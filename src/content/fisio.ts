@@ -1,10 +1,10 @@
 export const fisioContent = {
   hero: {
+    name: "VitalMov",
     title: "Recupera tu Movimiento",
     description:
       "Rehabilitación física y bienestar corporal para una mejor calidad de vida.",
     image: "/images/fisio/hero.jpg",
-    ctaText: "Solicitar consulta",
   },
   services: [
     {

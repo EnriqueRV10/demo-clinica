@@ -2,10 +2,10 @@
 import Layout from "../../layouts/layout.astro";
 import HeroSection from "../../components/HeroSection.astro";
 import { fisioContent } from "../../content/fisio.ts";
+import Hero1 from "../../assets/fisio/FisioHero2.jpg";
+import Hero2 from "../../assets/fisio/FisioHero1.jpg";
 ---
 
 <Layout>
-  <HeroSection {...fisioContent.hero} />
-  <h1>Fisio</h1>
-  <p>Fisio page content goes here.</p>
+  <HeroSection {...fisioContent.hero} hero1={Hero1} hero2={Hero2} />
 </Layout>

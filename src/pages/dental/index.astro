@@ -2,10 +2,10 @@
 import Layout from "../../layouts/layout.astro";
 import HeroSection from "../../components/HeroSection.astro";
 import { dentalContent } from "../../content/dental.ts";
+import Hero1 from "../../assets/dental/dentistHero3.jpg";
+import Hero2 from "../../assets/dental/dentisHero.jpg";
 ---
 
 <Layout>
-  <HeroSection {...dentalContent.hero} />
-  <h1>Dental</h1>
-  <p>Dental page content goes here.</p>
+  <HeroSection {...dentalContent.hero} hero1={Hero1} hero2={Hero2} />
 </Layout>

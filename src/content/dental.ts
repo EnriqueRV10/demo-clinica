@@ -1,10 +1,10 @@
 export const dentalContent = {
   hero: {
-    title: "Sonríe con Confianza",
+    name: "Dentalis",
+    title: "Cuidado Dental Integral",
     description:
-      "Tratamientos dentales modernos, cómodos y accesibles para toda la familia.",
+      "Nuestro experimentado equipo dental ofrece una combinación de amplios conocimientos y atención profesional personalizada y adaptada a sus necesidades específicas.",
     image: "/images/dental/hero.jpg",
-    ctaText: "Agendar cita",
   },
   services: [
     {
