@@ -1,0 +1,11 @@
+---
+import Layout from "../../layouts/layout.astro";
+import HeroSection from "../../components/HeroSection.astro";
+import { fisioContent } from "../../content/fisio.ts";
+---
+
+<Layout>
+  <HeroSection {...fisioContent.hero} />
+  <h1>Fisio</h1>
+  <p>Fisio page content goes here.</p>
+</Layout>
