@@ -1,11 +1,16 @@
 ---
 import Layout from "../../layouts/layout.astro";
-import HeroSection from "../../components/HeroSection.astro";
 import { fisioContent } from "../../content/fisio.ts";
+
+import HeroSection from "../../components/HeroSection.astro";
 import Hero1 from "../../assets/fisio/FisioHero2.jpg";
 import Hero2 from "../../assets/fisio/FisioHero1.jpg";
+
+import ServicesSection from "../../components/ServicesSection.astro";
+import FisioLogo from "../../assets/fisio/Fisio.svg";
 ---
 
 <Layout>
   <HeroSection {...fisioContent.hero} hero1={Hero1} hero2={Hero2} />
+  <ServicesSection services={fisioContent.services} ServiceLogo={FisioLogo} />
 </Layout>
