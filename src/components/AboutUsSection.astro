@@ -1,0 +1,71 @@
+---
+import { Image } from "astro:assets";
+import Doctor1 from "../assets/Doctor1.jpg";
+import Doctor2 from "../assets/Doctor2.jpg";
+import Doctor3 from "../assets/Doctor3.jpg";
+
+const { AboutUsImg, title, description1, description2, Doctors } = Astro.props;
+const doctorImages = [Doctor2, Doctor1, Doctor3];
+---
+
+<section
+  class="min-h-[80hv] bg-gradient-to-br from-slate-300 to-blue-50 flex items-center p-10 flex-col justify-center"
+>
+  <div class="grid lg:grid-cols-2 gap-12 min-h-[80vh] mx-auto p-10">
+    <div>
+      <Image
+        src={AboutUsImg}
+        alt="About Us"
+        class="w-full h-full object-cover rounded-3xl transform rotate-1 transition-transform duration-500"
+        loading={"lazy"}
+      />
+    </div>
+    <div class="p-10">
+      <h2 class="text-4xl font-bold text-slate-900 mb-4 mr-10">
+        {title}
+      </h2>
+      <p class="text-lg text-slate-600 mb-6 text-justify">
+        {description1}
+      </p>
+      <p class="text-lg text-slate-600 mb-6 text-justify">
+        {description2}
+      </p>
+      <button
+        class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+      >
+        Conocer Más
+      </button>
+    </div>
+  </div>
+
+  <div class="bg-sky-600 min min-h-[80vh] w-full rounded-4xl p-10">
+    <h1 class="text-white font-bold text-center text-3xl md:text-4xl mb-10">
+      Nuestros doctores
+    </h1>
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl mx-auto px-6 lg:px-8"
+    >
+      {
+        Doctors.map((service: any, index: number) => (
+          <div class="flex flex-col items-center space-y-4">
+            <div class="group relative w-full h-3/4 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+              <Image
+                src={doctorImages[index]}
+                alt={service.name}
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="text-center">
+              <h2 class="text-xl font-semibold text-white group-hover:text-sky-700 transition-colors duration-300">
+                {service.name}
+              </h2>
+              <p class="text-white group-hover:text-sky-600 transition-colors duration-300">
+                {service.specialty}
+              </p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

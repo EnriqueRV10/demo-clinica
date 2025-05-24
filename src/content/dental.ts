@@ -26,5 +26,26 @@ export const dentalContent = {
       icon: "🔩",
     },
   ],
+  aboutUs: {
+    title: "Consigue una sonrisa perfecta con nosotros",
+    description1:
+      "Nuestro equipo está compuesto por profesionales altamente capacitados y apasionados por brindar la mejor atención a nuestros pacientes.",
+    description2:
+      "En Dentalis, nos dedicamos a ofrecer un servicio de calidad, utilizando tecnología de vanguardia y técnicas innovadoras para garantizar resultados óptimos.",
+    doctors: [
+      {
+        name: "Dr. Juan Pérez",
+        specialty: "Odontología General",
+      },
+      {
+        name: "Dra. Ana Gómez",
+        specialty: "Ortodoncia",
+      },
+      {
+        name: "Dr. Luis Martínez",
+        specialty: "Implantes Dentales",
+      },
+    ],
+  },
   // Puedes seguir con otros bloques: about, testimonios, etc.
 };

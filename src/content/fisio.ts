@@ -26,4 +26,25 @@ export const fisioContent = {
       icon: "🛠️",
     },
   ],
+  aboutUs: {
+    title: "Comprometidos con tu Bienestar",
+    description1:
+      "En VitalMov, contamos con un equipo de fisioterapeutas altamente capacitados y apasionados por ayudar a nuestros pacientes a recuperar su calidad de vida.",
+    description2:
+      "Utilizamos técnicas avanzadas y personalizadas para cada paciente, asegurando un tratamiento efectivo y adaptado a tus necesidades específicas.",
+    doctors: [
+      {
+        name: "Dr. Carlos López",
+        specialty: "Fisioterapia Deportiva",
+      },
+      {
+        name: "Dra. María Fernández",
+        specialty: "Rehabilitación Funcional",
+      },
+      {
+        name: "Dr. Javier Torres",
+        specialty: "Masoterapia y Bienestar",
+      },
+    ],
+  },
 };

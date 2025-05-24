@@ -8,9 +8,17 @@ import Hero2 from "../../assets/dental/dentisHero.jpg";
 
 import ServicesSection from "../../components/ServicesSection.astro";
 import DienteLogo from "../../assets/dental/Diente.svg";
+
+import AboutUsSection from "../../components/AboutUsSection.astro";
+import AboutUsImage from "../../assets/dental/AboutUsDentist.jpg";
 ---
 
 <Layout>
   <HeroSection {...dentalContent.hero} hero1={Hero1} hero2={Hero2} />
   <ServicesSection services={dentalContent.services} ServiceLogo={DienteLogo} />
+  <AboutUsSection
+    {...dentalContent.aboutUs}
+    AboutUsImg={AboutUsImage}
+    Doctors={dentalContent.aboutUs.doctors}
+  />
 </Layout>
