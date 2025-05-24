@@ -47,4 +47,36 @@ export const fisioContent = {
       },
     ],
   },
+  testimonials: [
+    {
+      name: "Ana Martínez",
+      feedback:
+        "Gracias a VitalMov, he podido volver a correr después de mi lesión. El equipo es increíble y muy profesional.",
+    },
+    {
+      name: "Luis García",
+      feedback:
+        "La terapia que recibí fue excelente. Me ayudaron a aliviar el dolor y mejorar mi movilidad rápidamente.",
+    },
+    {
+      name: "Clara Rodríguez",
+      feedback:
+        "Los masajes terapéuticos me han cambiado la vida. Me siento más relajada y con menos tensión muscular.",
+    },
+    {
+      name: "Pedro Sánchez",
+      feedback:
+        "La rehabilitación postoperatoria fue fundamental para mi recuperación. Los fisioterapeutas son muy atentos y profesionales.",
+    },
+    {
+      name: "Sofía López",
+      feedback:
+        "Excelente atención y resultados. Me explicaron cada paso del tratamiento y me sentí muy cómoda durante las sesiones.",
+    },
+    {
+      name: "Andrés Torres",
+      feedback:
+        "VitalMov es el mejor centro de fisioterapia que he visitado. El personal es amable y los tratamientos son efectivos.",
+    },
+  ],
 };

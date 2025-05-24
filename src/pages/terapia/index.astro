@@ -11,6 +11,8 @@ import FisioLogo from "../../assets/fisio/Fisio.svg";
 
 import AboutUsSection from "../../components/AboutUsSection.astro";
 import AboutUsImage from "../../assets/dental/AboutUsDentist.jpg";
+
+import TestimonialsSection from "../../components/TestimonialsSection.astro";
 ---
 
 <Layout>
@@ -21,4 +23,5 @@ import AboutUsImage from "../../assets/dental/AboutUsDentist.jpg";
     AboutUsImg={AboutUsImage}
     Doctors={fisioContent.aboutUs.doctors}
   />
+  <TestimonialsSection testimonials={fisioContent.testimonials} />
 </Layout>

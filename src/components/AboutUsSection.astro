@@ -9,9 +9,9 @@ const doctorImages = [Doctor2, Doctor1, Doctor3];
 ---
 
 <section
-  class="min-h-[80hv] bg-gradient-to-br from-slate-300 to-blue-50 flex items-center p-10 flex-col justify-center"
+  class="min-h-[80hv] bg-gradient-to-br from-slate-300 to-blue-50 flex items-center p-10 flex-col justify-center gap-10"
 >
-  <div class="grid lg:grid-cols-2 gap-12 min-h-[80vh] mx-auto p-10">
+  <div class="grid lg:grid-cols-2 gap-12 min-h-[80vh] mx-auto p-1 md:p-10">
     <div>
       <Image
         src={AboutUsImg}
@@ -20,7 +20,7 @@ const doctorImages = [Doctor2, Doctor1, Doctor3];
         loading={"lazy"}
       />
     </div>
-    <div class="p-10">
+    <div class="p-0 md:p-10">
       <h2 class="text-4xl font-bold text-slate-900 mb-4 mr-10">
         {title}
       </h2>
@@ -38,9 +38,9 @@ const doctorImages = [Doctor2, Doctor1, Doctor3];
     </div>
   </div>
 
-  <div class="bg-sky-600 min min-h-[80vh] w-full rounded-4xl p-10">
+  <div class="bg-sky-600 min min-h-[80vh] w-full rounded-4xl p-5 md:p-10">
     <h1 class="text-white font-bold text-center text-3xl md:text-4xl mb-10">
-      Nuestros doctores
+      Nuestros profesionistas
     </h1>
     <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl mx-auto px-6 lg:px-8"

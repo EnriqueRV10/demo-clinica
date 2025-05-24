@@ -47,5 +47,37 @@ export const dentalContent = {
       },
     ],
   },
+  testimonials: [
+    {
+      name: "María López",
+      feedback:
+        "La atención en Dentalis fue excepcional. Me sentí cómoda y segura durante todo el tratamiento.",
+    },
+    {
+      name: "Carlos Ruiz",
+      feedback:
+        "Gracias a los implantes, puedo volver a comer y sonreír con confianza. ¡Recomiendo Dentalis al 100%!",
+    },
+    {
+      name: "Laura Fernández",
+      feedback:
+        "La limpieza dental fue rápida y efectiva. Definitivamente volveré para mis chequeos regulares.",
+    },
+    {
+      name: "Pedro Sánchez",
+      feedback:
+        "El equipo de ortodoncia me ayudó a conseguir la sonrisa que siempre quise. ¡Estoy muy agradecido!",
+    },
+    {
+      name: "Sofía Martínez",
+      feedback:
+        "Excelente servicio y atención personalizada. Me explicaron cada paso del tratamiento.",
+    },
+    {
+      name: "Andrés Torres",
+      feedback:
+        "La mejor experiencia dental que he tenido. El personal es muy profesional y amable, y los resultados son increíbles.",
+    },
+  ],
   // Puedes seguir con otros bloques: about, testimonios, etc.
 };
