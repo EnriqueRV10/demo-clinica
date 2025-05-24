@@ -79,5 +79,8 @@ export const dentalContent = {
         "La mejor experiencia dental que he tenido. El personal es muy profesional y amable, y los resultados son increíbles.",
     },
   ],
+  contact: {
+    email: "Dentalis.clinic@example.com",
+  },
   // Puedes seguir con otros bloques: about, testimonios, etc.
 };

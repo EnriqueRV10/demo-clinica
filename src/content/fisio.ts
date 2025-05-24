@@ -79,4 +79,7 @@ export const fisioContent = {
         "VitalMov es el mejor centro de fisioterapia que he visitado. El personal es amable y los tratamientos son efectivos.",
     },
   ],
+  contact: {
+    email: "vitalmov@example.com",
+  },
 };
