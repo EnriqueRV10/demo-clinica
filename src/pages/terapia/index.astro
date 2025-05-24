@@ -15,6 +15,7 @@ import AboutUsImage from "../../assets/dental/AboutUsDentist.jpg";
 import TestimonialsSection from "../../components/TestimonialsSection.astro";
 
 import ContactSection from "../../components/ContactSection.astro";
+import LogoFisio from "../../assets/fisio/LogoFisio.svg";
 
 import Footer from "../../components/Footer.astro";
 ---
@@ -29,5 +30,9 @@ import Footer from "../../components/Footer.astro";
   />
   <TestimonialsSection testimonials={fisioContent.testimonials} />
   <ContactSection {...fisioContent.contact} />
-  <Footer />
+  <Footer
+    name={fisioContent.hero.name}
+    email={fisioContent.contact.email}
+    LogoFooter={LogoFisio}
+  />
 </Layout>

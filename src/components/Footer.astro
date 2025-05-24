@@ -1,1 +1,43 @@
-<footer class="bg-sky-700 min-h-[250px]"></footer>
+---
+const { name, email, LogoFooter } = Astro.props;
+---
+
+<footer class="bg-sky-700 min-h-[250px] h-full flex flex-col">
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-6 text-white h-full flex-1"
+  >
+    <div class="flex flex-col gap-5">
+      <div class="flex gap-5 items-center">
+        <LogoFooter class="w-10 h-10" />
+        <h2 class="text-xl font-semibold mb-2">{name}</h2>
+      </div>
+      <div class="flex items-center space-x-4">
+        <p class="text-sm">{email}</p>
+      </div>
+      <div class="flex items-center space-x-4">
+        <p class="text-sm">+123-456-7890</p>
+      </div>
+    </div>
+    <div>
+      <h2 class="text-lg font-semibold mb-2">Enlaces</h2>
+      <ul class="text-sm">
+        <li><a href="/about" class="hover:underline">About</a></li>
+        <li><a href="/contact" class="hover:underline">Contact</a></li>
+        <li><a href="/privacy" class="hover:underline">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="text-lg font-semibold mb-2">Siguenos</h2>
+      <ul class="flex space-x-4 text-sm">
+        <li><a href="#" class="hover:underline">Twitter</a></li>
+        <li><a href="#" class="hover:underline">Facebook</a></li>
+        <li><a href="#" class="hover:underline">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div
+    class="border-t-1 border-slate-400 text-center text-xs text-white py-4 mx-10"
+  >
+    <p>2025 XPRS Todos los derechos resevados</p>
+  </div>
+</footer>
