@@ -1,21 +1,21 @@
 [build]
-  command = "npm run build:fisio"
+  command = "npm run build:dental"
   publish = "dist"
 
 [build.environment]
-  SITE_TYPE = "fisio"
+  SITE_TYPE = "dental"
 
 [[redirects]]
   from = "/"
-  to = "/terapia/"
+  to = "/dental/"
   status = 301
 
 [[redirects]]
-  from = "/dental/*"
-  to = "/terapia/"
+  from = "/terapia/*"
+  to = "/dental/"
   status = 301
 
 [[redirects]]
   from = "/*"
-  to = "/terapia/"
+  to = "/dental/"
   status = 200
