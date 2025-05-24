@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "build:dental": "SITE_TYPE=dental astro build",
+    "build:fisio": "SITE_TYPE=fisio astro build",
     "preview": "astro preview",
     "astro": "astro"
   },

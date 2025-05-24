@@ -1,0 +1,10 @@
+---
+import { dentalContent } from "../content/dental";
+import { fisioContent } from "../content/fisio";
+
+const siteType = import.meta.env.SITE_TYPE || "dental";
+const content = siteType === "dental" ? dentalContent : fisioContent;
+
+// Redirigir a la página específica
+return Astro.redirect(`/${siteType === "dental" ? "dental" : "terapia"}/`);
+---
