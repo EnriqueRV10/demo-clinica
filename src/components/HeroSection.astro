@@ -57,6 +57,7 @@ const { name, title, description, hero1, hero2 } = Astro.props;
               src={hero1}
               alt="Dental examination in progress"
               class="w-full h-80 lg:h-96 object-cover"
+              fetchpriority="high"
               loading={"eager"}
             />
             <div
@@ -74,6 +75,7 @@ const { name, title, description, hero1, hero2 } = Astro.props;
               src={hero2}
               alt="Patient dental care"
               class="w-full h-48 lg:h-60 object-cover"
+              fetchpriority="high"
               loading={"eager"}
             />
             <div
