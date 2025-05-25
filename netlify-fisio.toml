@@ -1,6 +1,0 @@
-[build]
-  command = "npm run build:fisio"
-  publish = "dist"
-
-[build.environment]
-  SITE_TYPE = "fisio"
