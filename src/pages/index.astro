@@ -1,10 +1,53 @@
 ---
 import { dentalContent } from "../content/dental";
 import { fisioContent } from "../content/fisio";
+import Layout from "../layouts/layout.astro";
+import Header from "../components/Header.astro";
+import HeroSection from "../components/HeroSection.astro";
+import ServicesSection from "../components/ServicesSection.astro";
+import AboutUsSection from "../components/AboutUsSection.astro";
+import TestimonialsSection from "../components/TestimonialsSection.astro";
+import ContactSection from "../components/ContactSection.astro";
+import Footer from "../components/Footer.astro";
+
+// Importa los assets para ambos tipos
+import Hero1Dental from "../assets/dental/dentistHero3.jpg";
+import Hero2Dental from "../assets/dental/dentisHero.jpg";
+import DienteLogo from "../assets/dental/Diente.svg";
+import AboutUsImageDental from "../assets/dental/AboutUsDentist.jpg";
+import LogoDentist from "../assets/dental/LogoDentist.svg";
+
+import Hero1Fisio from "../assets/fisio/FisioHero2.jpg";
+import Hero2Fisio from "../assets/fisio/FisioHero1.jpg";
+import FisioLogo from "../assets/fisio/Fisio.svg";
+import AboutUsImageFisio from "../assets/dental/AboutUsDentist.jpg"; // Usa la misma imagen o cambia si tienes otra
+import LogoFisio from "../assets/fisio/LogoFisio.svg";
 
 const siteType = import.meta.env.SITE_TYPE || "dental";
 const content = siteType === "dental" ? dentalContent : fisioContent;
 
-// Redirigir a la página específica
-return Astro.redirect(`/${siteType === "dental" ? "dental" : "terapia"}/`);
+const hero1 = siteType === "dental" ? Hero1Dental : Hero1Fisio;
+const hero2 = siteType === "dental" ? Hero2Dental : Hero2Fisio;
+const ServiceLogo = siteType === "dental" ? DienteLogo : FisioLogo;
+const AboutUsImg =
+  siteType === "dental" ? AboutUsImageDental : AboutUsImageFisio;
+const Logo = siteType === "dental" ? LogoDentist : LogoFisio;
 ---
+
+<Layout>
+  <Header name={content.hero.name} LogoHeader={Logo} />
+  <HeroSection {...content.hero} hero1={hero1} hero2={hero2} />
+  <ServicesSection services={content.services} ServiceLogo={ServiceLogo} />
+  <AboutUsSection
+    {...content.aboutUs}
+    AboutUsImg={AboutUsImg}
+    Doctors={content.aboutUs.doctors}
+  />
+  <TestimonialsSection testimonials={content.testimonials} />
+  <ContactSection {...content.contact} />
+  <Footer
+    name={content.hero.name}
+    email={content.contact.email}
+    LogoFooter={Logo}
+  />
+</Layout>
