@@ -78,6 +78,26 @@ export const dentalContent = {
       feedback:
         "La mejor experiencia dental que he tenido. El personal es muy profesional y amable, y los resultados son increíbles.",
     },
+    {
+      name: "Claudia Jiménez",
+      feedback:
+        "Me encantó la atención en Dentalis. Me hicieron sentir como en casa y el tratamiento fue indoloro.",
+    },
+    {
+      name: "Javier González",
+      feedback:
+        "Recomiendo Dentalis a todos mis amigos y familiares. Son los mejores en lo que hacen.",
+    },
+    {
+      name: "Isabel Ramírez",
+      feedback:
+        "La ortodoncia fue un proceso sencillo y los resultados son fantásticos. ¡Gracias, Dentalis!",
+    },
+    {
+      name: "Fernando Castro",
+      feedback:
+        "Estoy muy satisfecho con el servicio recibido. El equipo es profesional y se preocupa por el bienestar de sus pacientes.",
+    },
   ],
   contact: {
     email: "Dentalis.clinic@example.com",
