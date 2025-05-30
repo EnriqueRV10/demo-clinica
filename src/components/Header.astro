@@ -43,19 +43,23 @@ const { name, LogoHeader } = Astro.props;
         </li>
         <li>
           <a href="#servicios" class="text-gray-700 hover:text-blue-500"
-            >Servicios</a>
+            >Servicios</a
+          >
         </li>
         <li>
           <a href="#nosotros" class="text-gray-700 hover:text-blue-500"
-            >Nosotros</a>
+            >Nosotros</a
+          >
         </li>
         <li>
           <a href="#testimonios" class="text-gray-700 hover:text-blue-500"
-            >Testimonios</a>
+            >Testimonios</a
+          >
         </li>
         <li>
           <a href="#contacto" class="text-gray-700 hover:text-blue-500"
-            >Contacto</a>
+            >Contacto</a
+          >
         </li>
       </ul>
     </nav>
@@ -65,23 +69,39 @@ const { name, LogoHeader } = Astro.props;
   <div x-show="open" class="md:hidden px-4 pb-4" x-transition>
     <ul class="flex flex-col space-y-2">
       <li>
-        <a href="#Hero" class="text-gray-700 hover:text-blue-500">Inicio</a>
+        <a
+          href="#Hero"
+          class="text-gray-700 hover:text-blue-500"
+          @click="open = false">Inicio</a
+        >
       </li>
       <li>
-        <a href="#servicios" class="text-gray-700 hover:text-blue-500"
-          >Servicios</a>
+        <a
+          href="#servicios"
+          class="text-gray-700 hover:text-blue-500"
+          @click="open = false">Servicios</a
+        >
       </li>
       <li>
-        <a href="#nosotros" class="text-gray-700 hover:text-blue-500"
-          >Nosotros</a>
+        <a
+          href="#nosotros"
+          class="text-gray-700 hover:text-blue-500"
+          @click="open = false">Nosotros</a
+        >
       </li>
       <li>
-        <a href="#testimonios" class="text-gray-700 hover:text-blue-500"
-          >Testimonios</a>
+        <a
+          href="#testimonios"
+          class="text-gray-700 hover:text-blue-500"
+          @click="open = false">Testimonios</a
+        >
       </li>
       <li>
-        <a href="#contacto" class="text-gray-700 hover:text-blue-500"
-          >Contacto</a>
+        <a
+          href="#contacto"
+          class="text-gray-700 hover:text-blue-500"
+          @click="open = false">Contacto</a
+        >
       </li>
     </ul>
   </div>
