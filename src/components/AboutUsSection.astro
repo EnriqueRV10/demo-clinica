@@ -13,7 +13,7 @@ const doctorImages = [Doctor2, Doctor1, Doctor3];
   class="scroll-mt-[100px] min-h-[80hv] bg-gradient-to-br from-slate-300 to-blue-50 flex items-center p-10 flex-col justify-center gap-10"
 >
   <div class="grid lg:grid-cols-2 gap-12 min-h-[80vh] mx-auto p-1 md:p-10">
-    <div>
+    <div data-animate="fade-in-left" class="relative w-full h-full">
       <Image
         src={AboutUsImg}
         alt="About Us"
@@ -22,17 +22,27 @@ const doctorImages = [Doctor2, Doctor1, Doctor3];
       />
     </div>
     <div class="p-0 md:p-10">
-      <h2 class="text-4xl font-bold text-slate-900 mb-4 mr-10">
+      <h2
+        class="text-4xl font-bold text-slate-900 mb-4 mr-10"
+        data-animate="fade-in-right"
+      >
         {title}
       </h2>
-      <p class="text-lg text-slate-600 mb-6 text-justify">
+      <p
+        class="text-lg text-slate-600 mb-6 text-justify"
+        data-animate="fade-in-right"
+      >
         {description1}
       </p>
-      <p class="text-lg text-slate-600 mb-6 text-justify">
+      <p
+        class="text-lg text-slate-600 mb-6 text-justify"
+        data-animate="fade-in-right"
+      >
         {description2}
       </p>
       <button
         class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+        data-animate="fade-in-up"
       >
         Conocer Más
       </button>

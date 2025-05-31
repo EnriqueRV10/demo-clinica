@@ -44,9 +44,15 @@ document.addEventListener("DOMContentLoaded", () => {
     "slide-in-left": (element, delay = 0) => {
       animate(
         element,
-        { opacity: [0, 1], x: [-100, 0] },
+        { opacity: [0, 1], x: [-200, 0] },
         { duration: 1, delay },
       );
+    },
+    "scroll-fade-in-up": (element, delay = 0) => {
+      scroll(animate(element, { opacity: [0, 1, 1, 0] }), {
+        target: element,
+        offset: ["start end", "end end", "start start", "end start"],
+      });
     },
   };
 
