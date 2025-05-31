@@ -20,7 +20,6 @@ import LogoDentist from "../assets/dental/LogoDentist.svg";
 import Hero1Fisio from "../assets/fisio/FisioHero2.jpg";
 import Hero2Fisio from "../assets/fisio/FisioHero1.jpg";
 import FisioLogo from "../assets/fisio/Fisio.svg";
-import AboutUsImageFisio from "../assets/dental/AboutUsDentist.jpg"; // Usa la misma imagen o cambia si tienes otra
 import LogoFisio from "../assets/fisio/LogoFisio.svg";
 
 const siteType = import.meta.env.SITE_TYPE || "dental";
@@ -29,8 +28,7 @@ const content = siteType === "dental" ? dentalContent : fisioContent;
 const hero1 = siteType === "dental" ? Hero1Dental : Hero1Fisio;
 const hero2 = siteType === "dental" ? Hero2Dental : Hero2Fisio;
 const ServiceLogo = siteType === "dental" ? DienteLogo : FisioLogo;
-const AboutUsImg =
-  siteType === "dental" ? AboutUsImageDental : AboutUsImageFisio;
+const AboutUsImg = siteType === "dental" ? AboutUsImageDental : Hero1Fisio;
 const Logo = siteType === "dental" ? LogoDentist : LogoFisio;
 ---
 
