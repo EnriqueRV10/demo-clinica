@@ -10,10 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Definir animaciones
   const animations = {
+    "fade-in": (element, delay = 0) => {
+      animate(element, { opacity: [0, 1] }, { duration: 0.8, delay });
+    },
     "fade-in-up": (element, delay = 0) => {
       animate(
         element,
-        { opacity: [0, 1], y: [50, 0] },
+        { opacity: [0, 1], y: [100, 0] },
         { duration: 0.8, delay },
       );
     },
@@ -44,12 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
         { opacity: [0, 1], x: [-100, 0] },
         { duration: 1, delay },
       );
-    },
-    "scroll-up": (element, delay = 0) => {
-      scroll(animate(element, { opacity: [0, 1, 1, 0] }), {
-        target: element,
-        offset: ["start end", "end end", "start start", "end start"],
-      });
     },
   };
 
