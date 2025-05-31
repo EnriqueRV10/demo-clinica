@@ -1,4 +1,8 @@
-import { animate, delay, inView, scroll } from "motion";
+import {
+  animate,
+  scroll,
+  inView,
+} from "https://cdn.jsdelivr.net/npm/motion@12.15.0/dist/motion.es.min.js";
 
 window.motion = { animate, inView, scroll };
 
