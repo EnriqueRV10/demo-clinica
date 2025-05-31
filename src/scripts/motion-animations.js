@@ -74,4 +74,61 @@ document.addEventListener("DOMContentLoaded", () => {
       { once: true },
     );
   });
+
+  // Inicializar carrusel de testimonios
+  initTestimonialCarousel();
 });
+
+function initTestimonialCarousel() {
+  const track1 = document.getElementById("track-1");
+  const track2 = document.getElementById("track-2");
+
+  if (!track1 || !track2) return;
+
+  // Configuración del carrusel
+  const speed = 15; // pixels por segundo
+
+  function startCarousel(track, direction) {
+    const cards = track.children;
+    if (cards.length === 0) return;
+
+    const cardWidth = cards[0].offsetWidth + 24; // width + gap
+    const totalWidth = cardWidth * (cards.length / 2); // Solo la mitad porque duplicamos
+
+    // Posición inicial
+    let currentX = direction === "right" ? 0 : -totalWidth;
+    track.style.transform = `translateX(${currentX}px)`;
+
+    function moveTrack() {
+      if (direction === "right") {
+        currentX -= speed / 60; // 60fps
+        if (currentX <= -totalWidth) {
+          currentX = 0;
+        }
+      } else {
+        currentX += speed / 60;
+        if (currentX >= 0) {
+          currentX = -totalWidth;
+        }
+      }
+
+      track.style.transform = `translateX(${currentX}px)`;
+      requestAnimationFrame(moveTrack);
+    }
+
+    moveTrack();
+  }
+
+  // Observar cuando la sección entra en viewport para iniciar animación
+  const testimonialsSection = document.getElementById("testimonios");
+  if (testimonialsSection) {
+    inView(
+      testimonialsSection,
+      () => {
+        startCarousel(track1, "right");
+        startCarousel(track2, "left");
+      },
+      { once: true },
+    );
+  }
+}
